@@ -37,3 +37,17 @@ def decript(sphered_text, key_word):
     return incripte_message
 
 print(decript("SGZVQBUQAFRWSLC", "ACM"))
+
+
+
+# 
+# def decript(sphered_text, key_word):
+#     combined_word = key_word + sphered_text[: (len(sphered_text)- len(key_word))]
+#     incripte_message  =  ""
+#     for i in range (len(sphered_text)):
+#         for j in range (len(key_word)):
+#             if i == j:
+#                 new_char = (ord(combined_word[i])- 65) - (ord(key_word[j])- 65)
+#                 real_new_char = chr( (new_char % 26) + 65)
+#                 incripte_message += real_new_char
+#     return incripte_message
